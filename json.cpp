@@ -20,6 +20,13 @@ struct Value{
   }
 };
 
+struct Number:Value{
+  float num;
+  int weight() const{
+    return 1;
+  }
+};
+
 struct Null:Value{
 };
 
